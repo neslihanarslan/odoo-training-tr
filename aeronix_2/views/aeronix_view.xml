@@ -1,7 +1,7 @@
 <odoo>
     <record id="aeronix_view_list" model="ir.ui.view">
-        <field name="name">aeronix-2</field>
-        <field name="model">aeronix-2</field>
+        <field name="name">aeronix_2</field>
+        <field name="model">aeronix_2</field>
         <field name="arch" type="xml">
             <tree string="aeronix">
                 <field name="name"/>
@@ -13,7 +13,7 @@
 
     <record id="aeronix" model="ir.actions.act_window">
         <field name="name">Aeronix</field>
-        <field name="res_model">aeronix-2</field>
+        <field name="res_model">aeronix_2</field>
         <field name="view_mode">tree,form</field>
     </record>
 

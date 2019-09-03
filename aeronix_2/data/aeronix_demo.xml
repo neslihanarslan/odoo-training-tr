@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+
+    <record id ="standard_demo" model="res.partner">
+        <field name="name">Nesli</field>
+    </record>
+
+
+    <record id="aeronix_demo" model="aeronix_2">
+        <field name="name" eval="ref('standard_demo')"/>
+        <field name="id_status">passport</field>
+        <field name="id_number">500</field>
+    </record>
+</odoo>
