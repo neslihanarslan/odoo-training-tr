@@ -12,7 +12,7 @@ class Certification(models.Model):
     number = fields.Char()
     date = fields.Date(string='Validation Date')
     description = fields.Text(string='Validation Details')
-    standard_id = fields.Many2one("Certification.standard")
+    standard_id = fields.Many2one("certification.standard")
     owner_id = fields.Many2one("res.partner")
     entity_id = fields.Many2one("res.partner")
     expiry_days = fields.Integer('Expiry Days', readonly=True, compute='_compute_expiry_days')

@@ -15,8 +15,7 @@
    <record id="group_certification_manager" model="res.groups">
        <field name="name">Certification Manager</field>
        <field name="users" eval="[(4, ref('base.user_root')), (4, ref('base.user_admin'))]"/>
-       <field name="implied_ids"
-              eval="[(4, ref('group_certification_user'))]"/>
+       <field name="implied_ids" eval="[(4, ref('group_certification_user'))]"/>
        <field name="category_id" ref="module_category_certification"/>
    </record>
 
